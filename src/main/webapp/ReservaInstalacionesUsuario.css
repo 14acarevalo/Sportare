@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-size: auto; /* Cambiado a auto para conservar el tamaño original de las imágenes */
+    animation: cambio-imagenes 15s infinite;
+}
+
+@keyframes cambio-imagenes {
+    0% { background-image: url(fondoProyecto/pexels-photo-1171084.jpeg);}
+    20% { background-image: url(fondoProyecto/free-photo-of-deporte-baloncesto-urbano-pista.jpeg);}
+    40% { background-image: url(fondoProyecto/istockphoto-1363976548-1024x1024.jpg);}               
+    60% { background-image: url(fondoProyecto/pexels-photo-1619860.webp);}
+    80% { background-image: url(fondoProyecto/tenis.jpg);}
+    100% { background-image: url(fondoProyecto/pexels-photo-1171084.jpeg);} /* Vuelve a la primera imagen */
+}
+
+
+.presentacion {
+    text-align: center;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:chartreuse;
+}
+
+header {
+display: flex;
+background-color: black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+   
+    margin: 80pt;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 17pt;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+footer {
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Con este comando estoy bajaando el codigo de footer abajo */
+    bottom: 0;
+}
+
+
+
+a:visited {
+    color: white;
+}
+

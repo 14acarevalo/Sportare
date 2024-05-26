@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: cambio-imagenes 15s infinite;
+    background-size: cover;
+    background-position: center;
+    font-size: 14px; /* Nuevo tamaño de fuente base para todos los elementos */
+}
+
+@keyframes cambio-imagenes {
+    0% { background-image: url(PicturesContactaConmigo/agua.jpg);}
+    25% { background-image: url(PicturesContactaConmigo/bici.jpg);}
+    50% { background-image: url(PicturesContactaConmigo/cuerdas.jpg);}               
+    75% { background-image: url(PicturesContactaConmigo/trofeo.jpg);}
+    100% { background-image: url(PicturesContactaConmigo/zapas.jpg);}
+}
+
+header {
+    padding: 10px; /* Reducido el padding */
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; 
+}
+
+header p:hover {
+    color: blue;
+}
+
+main {
+    font-size: 1.4rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    align-items: center;
+    padding: 10px; /* Reducido el padding */
+    margin: auto;
+    color: white;
+    background-color: black;
+    max-width: 70%;
+}
+
+.lista {
+    list-style-type: none;
+}
+
+.cuadroRecuperarUsuario {
+    padding: 20px; /* Reducido el padding */
+    margin: auto;
+    background-color: beige;
+    color: black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+    max-width: 50%; /* Cambiado el porcentaje del ancho máximo */
+    font-size: 1.2rem; /* Reducido el tamaño de fuente */
+}
+
+input[type="text"],
+input[type="Observaciones"] {
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    margin: 5px; /* Ajustado el margen */
+    text-align: center;
+    align-items: center;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    margin: 5px; /* Ajustado el margen */
+    background-color: aqua;
+}
+
+a:visited {
+    color: white;
+}
+
+footer {
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1.2rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+}

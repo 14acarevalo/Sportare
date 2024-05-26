@@ -1,0 +1,61 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-image: url(fondoProyecto/fondoProyecto2.jpg);
+    background-size: cover;
+}
+
+.presentacion {
+    text-align: center;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chartreuse;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tablaDatos {
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 26pt;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.consultarSaldo, .realizarIngreso {
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Reducir el padding para que los iconos ocupen menos espacio */
+    margin: 0px 20px; /* Reducir el margen entre los iconos */
+    display: flex; /* Asegurar que los elementos dentro se alineen horizontalmente */
+    flex-direction: row; /* Asegurar que los elementos estén en una fila */
+    gap: 10px; /* Añadir un espacio entre los emoticonos */
+}
+
+footer {
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Con este comando estoy bajando el codigo de footer abajo */
+    bottom: 0;
+}
+
+a:visited {
+    color: white;
+}

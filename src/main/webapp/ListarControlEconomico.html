@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Listar_datos_economicos</title>
+ <link rel="stylesheet" href="ListarControlEconomico.css">
+
+<script type="text/javascript">
+        function llamada() {
+            fetch('ClaseModificarControlEconomico?op=1')
+            .then(res => res.json())
+            .then(res => pintarResultadosEconomicos(res));
+        }
+
+        function borrar(idIngreso) {
+        	if(confirm("Seguro que quieres borrar")) {
+	        	fetch('ClaseModificarControlEconomico?idIngreso='+idIngreso+'&op=3')
+	            .then(res => res.json())
+	            .then(res => pintarResultadosEconomicos(res));
+       
+        	} else {
+        		
+        	}
+        }
+        
+        function pintarResultadosEconomicos(datos) {
+            var html = "<table>"; // Inicializamos la variable html con <table>
+            html += "<thead><tr><th>Id Ingreso</th><th>Ingreso en euros</th><th>Fecha del ingreso</th><th>Id Usuario</th><th>Nombre</th><th>ID Apellidos</th><th>Saldo</th><th>Descripcion del servicio</th><th>Editar</th><th>Borrar</th></tr></thead>";
+            html += "<tbody>";
+            for(var i = 0; i < datos.length; i++) { // Este bucle me permitirá listar todos los usuarios que existen en mi base de datos
+                html += "<tr><td>" + datos[i].idIngreso + "</td><td>" + datos[i].ingresos + "</td><td>" + datos[i].fechaIngreso + "</td><td>" + datos[i].idUsuario + "</td><td>" + datos[i].nombreUsuario + "</td><td>" + datos[i].apellidosUsuario + "</td><td>" + datos[i].saldo + "</td><td>" + datos[i].descripcion + "</td><td><a href='PagCambiarPagos.html?idIngreso=" + datos[i].idIngreso + "&op=2'>Editar</a></td><td><a href='javascript:borrar("+datos[i].idIngreso+")'>Borrar</a></td></tr>";
+            	
+            }
+            html += "</tbody>";
+
+            html += "</table>";
+            document.getElementById("resultadosEconomicos").innerHTML = html;
+        }
+
+        window.onload = function() {
+            llamada("ClaseModificarControlEconomico");
+        }
+    </script>
+</head>
+<body>
+<header>
+        <div class="logo"> <img src="PicturesPortada/SPORTARE.png" alt="Logo" width="100px" height="100px"></div>
+        <div class="menu"> 
+            <ul>
+                <li> <a href="PagCoordMenu.html">Inicio</a></li>
+                <li> <a href="Pag_contactaConmigo.html">Contacto</a></li>
+                <li><a href="Pag_informacion.html"> Informacion</a></li>
+                <li><a href="ListarControlEconomico.html"> Refrescar pantalla </a></li>
+                
+            </ul>
+        </div>
+        <div class="presentacion">
+            <p class="Bienvenidos"><h1>Bienvenido a <span class="nombremarca">LOS DATOS DE TUS ECONOMICOS DE TU ENTIDAD</span></h1>
+            <p>Podras ver todos los movimientos de tu entidad en esta pagina</p>
+         </div>
+    </header>
+        
+    <main>
+        <div id="resultadosEconomicos" class="tablaDatos"></div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="Pag_contactaConmigo.html">Contacta con nosotros</a>
+            <p>Todos tus datos en esta página</p>
+            <p>Visítanos en:</p>
+            <div>
+                <table>
+                    <tr>
+                        <td><a href="https://www.instagram.com/corralsemueve/?hl=es"><img src="Logos redes/logo insta.png" alt="LogoInsta" width="30pt" height="30pt"></a></td>
+                        <td><a href="https://www.facebook.com/corral.semueve"><img src="Logos redes/face.png" alt="LogoFace" width="30pt" height="30pt"></a></td>
+                        <td><a href="https://www.linkedin.com/in/alberto-c-162930135/"><img src="Logos redes/linke.png" alt="LogoFace" width="30pt" height="30pt"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>   
+    </footer>
+
+
+
+</body>
+</html>

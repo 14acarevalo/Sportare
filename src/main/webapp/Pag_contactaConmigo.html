@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta_conmigo</title>
+    <link rel="stylesheet" href="Pag_contactaConmigo.css">
+</head>
+<body>
+
+    <header>   
+        <div>
+        <div class="logo"><img src="PicturesPortada/SPORTARE.png" alt="logocorral" width="300px" height="300px"></div>
+           <p> <strong>¿Cómo puedes contactar con nosotros?</strong></p>
+        </div>
+    </header>
+    
+    
+<main>  
+<div>
+        <ul class="lista">
+            <li><strong>Telefono de contacto:</strong> 683 234 040</li>
+            <li><strong>Whatsapp:</strong> 683 234 040</li>
+            <li><strong>Correo:</strong> alberto.campanero.arevalo@gmail.com</li>
+        </ul>
+        
+</div>
+<div class="cuadroRecuperarUsuario">
+    <form action="/formularioContactaconmigo" method="post"> <!--CON ESTO ENVIAMOS LOS DATOS A ESA DIRECCION, FORMULARIO, AL SER TAN LARGO ES MEJOR POST QUE GET-->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required> <br><!--CON PLACEHOLDER nos aparecerá este dato en grisaceo, como ves con nombre--> 
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required> <br>
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" id="dni" placeholder="Ingresa tu DNI" required><br>
+        <label for="correo ">Correo electrónico</label>
+        <input type="text" name="correo" id="correo" placeholder="Correo electrónico" required> <br>
+        <textarea name="text" id="observaciones" cols="80" rows="10" placeholder="Observaciones"></textarea><br>
+        <label for="enviar"></label>
+        <input type="submit">
+        <label for="reset"></label>
+        <input type="reset">
+    </form>
+
+</div>
+</main>  
+
+<footer>
+    <div>
+      <p>Servicio deportivo ligado a la gestión deportiva</p>
+      <p>Estará destinado para toda entidad, ayuntamiento, club, organización que desee organizar su actividad deportiva</p>
+            <p>Puedes encontrarnos en: </p>
+            <div>
+                <table>
+                    <th>
+                        <tr><a href="https://www.instagram.com/corralsemueve/?hl=es"> <img src="Logos redes/logo insta.png" alt="LogoInsta" width="30pt" height="30pt"> </a> </tr>
+                        <tr><a href="https://www.facebook.com/corral.semueve"> <img src="Logos redes/face.png" alt="LogoFace" width="30pt" height="30pt"> </a></tr>
+                        <tr><a href="https://www.linkedin.com/in/alberto-c-162930135/"> </a><img src="Logos redes/linke.png" alt="LogoFace" width="30pt" height="30pt"> </tr>
+                    </th>
+                </table>
+            </div>
+    </div>   
+        
+           
+         
+        </footer>
+
+
+</body>
+</html>

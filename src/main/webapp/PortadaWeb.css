@@ -1,0 +1,201 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(PicturesPortada/Fondoportada.jpg);
+    width: 100%;
+}
+
+
+header {
+border: 1pt solid black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 20px;
+background-image: url(PicturesPortada/basket.jpg);
+background-size: cover
+}
+
+.logo {
+    float: right;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 42px;
+    padding: 70px;
+    justify-content: 50px space-between;
+    color: aliceblue;
+}
+
+.menu ul li {
+    margin-right: 20px; /* Ajusto el espacio entre elementos si es necesario */
+    font-size: 40px;
+    border: 1pt solid black;
+    background-color: rgba(3, 3, 94, 0.89)   
+}
+.presentacion {
+    color: aliceblue;
+    display: block;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    margin: 60px;
+    padding: 100px;
+    background-color:rgba(3, 3, 94, 0.89) ;
+    box-shadow:  0px 0px 80px rgba(0, 0, 0, 0.5);
+
+}
+
+.nombremarca { 
+    color: yellow;
+}
+
+.espacio {
+    color: yellow;
+}
+.bienvenidos {
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marco1  {
+    background-color: rgb(2, 2, 158);
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    max-width: 70%;
+    display: flex; /* Utilizamos flexbox */
+    align-items: center;
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.Gestion  {
+    font-family: Montserrat, helvetica, arial, lucida;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+.marco1 p {
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.5);
+    flex: 1; /* Los párrafos ocupan todo el espacio disponible */
+}
+
+.diferencia {
+    font-family: Montserrat, helvetica, arial, lucida;
+    font-size: 80px;
+    color: blue;
+    text-align: center;
+}
+.marco2 {
+    background-color: aliceblue;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 60px; 
+    padding: 20px;
+    align-items: center;
+    justify-self: center;
+    box-shadow:  0px 0px 60px rgba(0, 0, 0, 0.5);
+    background-image: url(PicturesPortada/correr.jpg);
+    background-size: cover; /*PARA QUE ME OCUPE TODA LA PANTALLA*/
+    
+}
+.diferencia {
+    font-size: 80px;
+}
+
+
+
+.marco2 p {
+    font-size: 50px;
+    font-style: oblique;
+    text-align: center;
+    color: blue;
+    flex: 1;
+}
+
+.contenedor2 {
+    display: flex;
+    
+    justify-content: center; /* Centro los elementos horizontalmente */
+    align-items: center;
+}
+.marco3 {
+    background-color: aliceblue;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 60px; 
+    padding: 20px;
+    align-items: center;
+    justify-self: center;
+    box-shadow:  0px 0px 60px rgba(0, 0, 0, 0.5);
+    background-image: url(PicturesPortada/padel.jpg);
+    background-size: cover;
+
+}
+
+.marco3 p {
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: blue;
+    flex: 1; 
+
+}
+
+
+.marco4 {
+    background-color: purple;
+    width: 100%;
+    margin-top: 60px; 
+    padding: 20px;
+    align-items: center;
+    justify-self: center;
+    box-shadow:  0px 0px 60px rgba(0, 0, 0, 0.5);
+}
+
+.marco4 p {
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    
+}
+.marco4 a {
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(3, 3, 94, 0.89) ;
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+}
+
+
+
+
+a:visited {
+    color: white; /* con esto basicamente lo que hago es quitar el color del enlace y dejarlo en algo como si nunca se hubiera visitado, blanco*/
+} 

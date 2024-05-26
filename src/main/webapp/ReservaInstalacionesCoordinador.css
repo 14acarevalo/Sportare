@@ -1,0 +1,57 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-image: url(fondoProyecto/fondo12.jpg) ;
+    background-size: cover;
+}
+
+
+
+.presentacion {
+    text-align: center;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+header {
+display: flex;
+background-color: rgba(3, 3, 94, 0.89);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+   
+    margin: 80pt;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 17pt;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+footer {
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Con este comando estoy bajaando el codigo de footer abajo */
+    bottom: 0;
+}
+
+
+
+a:visited {
+    color: white;
+}
+

@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+header {
+    padding: 10px; /* Reducido el padding */
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(3, 3, 94, 0.89);
+    background-image: url(PicturesPortada/Instalacion.jpg);
+}
+
+main {
+    background-image: url(fondoInformacion/fondoInformacion2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Actividades {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    color: white;
+    background-color:rgba(3, 3, 94, 0.89); 
+}
+
+.crossfit {
+    padding: 20pt;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+.box {
+    padding: 15pt;
+    margin-top: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+.wod {
+    color: white;
+    background-color: black;
+}
+.endurance {
+    color: aliceblue;
+    background-color: blue;
+}
+.gimnasticos {
+    color: white;
+    background-color: crimson;
+}
+.hero {
+    color: black;
+    background-color: chartreuse;
+}
+.halterofilia {
+    color: white;
+    background-color:darkgreen
+}
+.tenis {
+    padding: 20pt;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+.pista1 {
+    padding: 15pt;
+    margin-top: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+.pista {
+    color: white;
+    background-color: darkgreen;
+}
+
+.PADEL {
+    padding: 20pt;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+.padel {
+    padding: 15pt;
+    margin-top: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+.pista2 {
+    color: black;
+    background-color:cornflowerblue
+}
+
+
+.FUTBOL {
+    padding: 20pt;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+.futbol {
+    padding: 15pt;
+    margin-top: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+.pista3 {
+    color: black;
+    background-color:lawngreen;
+}
+
+.FRONTENIS {
+    padding: 20pt;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+.frontenis {
+    padding: 15pt;
+    margin-top: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+.pista4 {
+    color: black;
+    background-color:chocolate
+}
+
+.BALONCESTO {
+    padding: 20pt;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+.baloncesto {
+    padding: 15pt;
+    margin-top: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+.pista5 {
+    color: black;
+    background-color:orangered;
+}
+.precios {
+background-color:chartreuse;
+color:black;
+text-align: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 10pt;
+}
+.dinero {
+    font-size: 35pt;
+}
+
+footer{
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+}
+
+
+a:visited {
+    color: white;
+}

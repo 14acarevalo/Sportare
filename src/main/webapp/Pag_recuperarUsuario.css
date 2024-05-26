@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: cambio-imagenes 15s infinite;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes cambio-imagenes {
+    0% { background-image: url(PicturesPortada/Instalacion.jpg);}
+    25% { background-image: url(PicturesPortada/instalacion\ 2.jpg);}
+    50% { background-image: url(PicturesPortada/basket.jpg);}
+    75% { background-image: url(PicturesPortada/correr.jpg);}
+    100% { background-image: url(PicturesPortada/istockphoto-1461079523-1024x1024.jpg);}
+}
+
+header {
+    
+    color: yellow;
+    font-size: 30pt;
+    text-align: center;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 40px;
+    margin: auto; /* Ajusta el relleno según sea necesario */
+    text-align: center;
+    border: 1pt solid black;
+    font-size: 35pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
+    max-width: 50%; /* Con esto voy a jugar con el tamaño del cuadro */
+    color: blue;
+    background-color: aliceblue;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    font-size: 35pt;
+    margin: 5pt;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 24pt;
+    background-color: aqua;
+}
+
+a:visited {
+    color: white; /* con esto basicamente lo que hago es quitar el color del enlace y dejarlo en algo como si nunca se hubiera visitado, blanco*/
+} 
+
+
+footer {
+    margin-top: 9%;
+    background-color: rgba(3, 3, 94, 0.89) ;
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+    width: 100%;
+}
+

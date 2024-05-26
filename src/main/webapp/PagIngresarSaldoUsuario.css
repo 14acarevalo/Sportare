@@ -1,0 +1,76 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos en el body se dispongan en columna */
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-image: url(fondoProyecto/fondoProyecto2.jpg);
+    background-size: cover;
+    min-height: 100vh; /* Asegura que el cuerpo ocupa toda la altura de la ventana */
+}
+
+.presentacion {
+    text-align: center;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chartreuse;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 10px; /* Añade padding para separar los elementos del borde */
+}
+
+.tablaDatos {
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 26pt;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+main {
+	display: flex; /* Asegura que los elementos dentro se alineen horizontalmente */
+    flex-direction: row; /* Asegura que los elementos se dispongan en una fila */
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    margin: 0px 20px; /* Ajusta el margen según sea necesario */
+    gap: 10px; /* Añade espacio entre los elementos */
+}
+
+
+
+footer {
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Con este comando estoy bajando el codigo de footer abajo */
+    bottom: 0;
+    padding: 10px 0; /* Añade padding para separar el contenido del borde */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 10px; /* Añade espacio entre los iconos */
+}
+
+a:visited {
+    color: white;
+}

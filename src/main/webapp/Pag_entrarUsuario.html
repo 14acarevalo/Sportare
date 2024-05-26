@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar con el perfil</title>
+    <link rel="stylesheet" href="Pag_entrarUsuario.css">
+
+</head>
+
+<body>
+    <header>   
+        <div>
+        <div class="logo"><img src="PicturesPortada/SPORTARE.png" alt="logocorral" width="300px" height="300px"></div>
+             
+           <p> <strong>Bienvenidos, introduce tus datos</strong></p>
+        </div>
+    </header>
+
+<main>     
+    <div>    
+        <form name = "Login" action="Login" method="post">
+       <label for="idUsuario"> </label>
+       <input type="text" name="idUsuario" id="idUsuario" placeholder="Identificador" required >  <br>
+       
+       <label for="nombre"> </label>
+       <input type="text" name="nombre" id="nombre" placeholder="Nombre" required >  <br>
+       
+        <label for="correoElectronico"></label>
+        <input type="text" name="correoElectronico" id="correoElectronico" placeholder="Correo Electronico" required >  <br>
+        <label for="contraseña"></label> 
+        <input type="password" name="password" id="password" placeholder="Contraseña" required><br>
+        <select name="permiso">
+			<option value="1">Usuario</option>
+			<option value="9">Administrador</option> 
+			
+			</select><br>
+        <label for="enviar"></label>
+        <input type="submit">
+        <label for="reset"></label>
+        <input type="reset">
+        </form>
+        <p> <a href="altaUsuario.html"> <strong> ¿Nuevo usuario? ¿A qué esperas para crearte tu usuario? Registrate</strong></a> </p>
+        <p> <a href="Pag_recuperarUsuario.html"> <strong> Recupera tu contraseña, pincha aqui</strong> </a></p>
+    </div>
+</main>
+     
+
+<footer>
+    <div>
+        <a href="Pag_contactaConmigo.html">Contacta con nosotros</a>
+        <p>Servicio deportivo ligado a la gestión deportiva</p>
+        <p>Estará destinado para toda entidad, ayuntamiento, club, organización que desee organizar su actividad deportiva</p>
+              <p>Puedes encontrarnos en: </p>
+              <div>
+                  <table>
+                      <th>
+                          <tr><a href="https://www.instagram.com/corralsemueve/?hl=es"> <img src="Logos redes/logo insta.png" alt="LogoInsta" width="30pt" height="30pt"> </a> </tr>
+                          <tr><a href="https://www.facebook.com/corral.semueve"> <img src="Logos redes/face.png" alt="LogoFace" width="30pt" height="30pt"> </a></tr>
+                          <tr><a href="https://www.linkedin.com/in/alberto-c-162930135/"> </a><img src="Logos redes/linke.png" alt="LogoFace" width="30pt" height="30pt"> </tr>
+                      </th>
+                  </table>
+              </div>
+      </div>   
+          
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+
+.tabla {
+    text-align: center;
+}
+.Encabezado {
+background-image: url("https://th.bing.com/th/id/OIP.Z5LO1S_FJmTj4Kxw8rYJPgHaEo?rs=1&pid=ImgDetMain");
+width: 100%;
+height: 20%;
+}
+
+.menu {
+display: inline;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif, solid;
+list-style: none;
+}
+
+.indice {
+    display: inline;
+}
+
+.parte1 {
+    background-image: url("https://th.bing.com/th/id/OIP.VF3cRrFfU4Wyae-j7ZPB3gHaEb?w=279&h=180&c=7&r=0&o=5&pid=1.7");
+}
+
+

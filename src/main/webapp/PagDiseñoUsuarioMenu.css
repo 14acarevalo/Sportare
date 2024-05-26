@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-image: url(fondoProyecto/fondoProyecto2.jpg) ;
+    background-size: cover;
+}
+
+header {
+display: flex;
+background-color: black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.presentacion{
+text-align: center;
+margin: auto;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: chartreuse;
+}
+
+.perfil {
+    padding: 80px; /* Reducido el padding */
+    margin: 400px;
+    text-align: center;
+    font-size: 1.5rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+    width: 100%;
+    font-size: 45px;
+    color: chartreuse;
+}
+
+.panelUsuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padel, .frontenis, .futbol, .frontenis, .wod, .halterofilia, .heroWod, .endurance, .tenis, .baloncesto, .gimnasticos  {
+    border-radius: 40%;
+    margin: 35px;
+    overflow: hidden;
+}
+
+footer{ 
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+   
+}
+
+
+a:visited {
+    color: white;
+}

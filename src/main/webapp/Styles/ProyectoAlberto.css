@@ -1,0 +1,27 @@
+* {
+    margin: 5px;
+    padding: 5px;
+
+    font-size: large, 40pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /*VAMOS A ESCOGER ESOS COLORES, FRUTOS DEL AZAR*/
+}
+.Presentacion {
+    background-color: black;
+    color: chocolate; 
+    font-size: 20pt;
+    
+    
+}
+
+.articulo {
+    background-color: blue;
+    color: coral;
+    font-size: 50pt ;
+}
+
+.span {
+    color: brown;
+    background-color: yellow;
+}

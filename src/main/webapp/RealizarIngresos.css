@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-image: url(fondoProyecto/fondo12.jpg) ;
+    background-size: cover;
+
+}
+
+header {
+display: flex;
+padding: 10px; /* Reducido el padding */
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color:  rgba(3, 3, 94, 0.89);
+    width: 100%;
+    font-size: 25px;
+    color: white;
+}
+
+.presentacion {
+    text-align: center;
+    justify-content: center;
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 40px;
+    position: center;
+    margin-top: 70px; /*Con esto centro el formulario*/
+    background-color:aqua;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 12pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+footer{ 
+
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+  
+}
+
+a:visited {
+    color: white;
+}

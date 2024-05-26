@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PagVisualizarDatosUsuario.css">
+    <script type="text/javascript">
+        function llamada() {
+            fetch('ClaseModificarServicioDeportivo?op=1')
+            .then(res => res.json())
+            .then(res => pintarResultados(res));
+        }
+        
+        function borrar(idServicio) {
+        	if(confirm("Seguro que quieres borrar")) {
+	        	fetch('ClaseModificarServicioDeportivo?idServicio='+idServicio+'&op=3')
+	            .then(res => res.json())
+	            .then(res => pintarResultados(res));
+       
+        	} else {
+        		
+        	}
+        }
+
+        function pintarResultados(datos) {
+            var html = "<table>"; // Inicializamos la variable html con <table>
+            html += "<thead><tr><th>IDServicio</th><th>Nombre</th><th>Hora de comienzo</th><th>Minuto de comienzo</th><th>Hora de finalizacion</th><th>Minuto de finalizacion</th><th>Dia</th><th>Mes</th><th>Id Usuario</th><th>Editar</th><th>Borrar</th></tr></thead>";
+            html += "<tbody>";
+            for(var i = 0; i < datos.length; i++) { //Este bucle me permitirá listar todos los usuarios que existen en mi base de datos
+            	html += "<tr><td>" + datos[i].idServicio + "</td><td>" + datos[i].nombre + "</td><td>" + datos[i].horaIniciacion + "</td><td>" + datos[i].minInicio + "</td><td>" + datos[i].horaFinalizacion + "</td><td>" + datos[i].minFinal + "</td><td>" + datos[i].dia + "</td><td>" + datos[i].mes + "</td><td>" + datos[i].idUsuario + "</td><td><a href='PagModificarServicio.html?idServicio=" + datos[i].idServicio + "&op=2'>Editar</a></td><td><a href='javascript:borrar("+datos[i].idServicio+")'>Borrar</a></td></tr>";
+            }
+            html += "</tbody>";
+            html += "</table>";
+            document.getElementById("resultados").innerHTML = html;
+        }
+
+        window.onload = function() {
+            llamada("ClaseModificarServicioDeportivo");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo"> <img src="PicturesPortada/SPORTARE.png" alt="Logo" width="100px" height="100px"></div>
+        <div class="menu"> 
+            <ul>
+                <li> <a href="PagCoordMenu.html">Inicio</a></li>
+                <li> <a href="Pag_contactaConmigo.html">Contacto</a></li>
+                <li><a href="Pag_informacion.html"> Informacion</a></li>
+                <li><a href="ListarServicios.html"> Refrescar página</a></li>
+                
+            </ul>
+        </div>
+        <div class="presentacion">
+            <p class="Bienvenidos"><h1>Bienvenido a <span class="nombremarca">LOS DATOS DE LAS RESERVAS</span></h1>
+            <p>Todos los datos los podrás encontrar en este apartado</p>
+         </div>
+    </header>
+        
+    <main>
+        <div id="resultados" class="tablaDatos"></div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="Pag_contactaConmigo.html">Contacta con nosotros</a>
+            <p>Todos tus datos en esta página</p>
+            <p>Visítanos en:</p>
+            <div>
+                <table>
+                    <tr>
+                        <td><a href="https://www.instagram.com/corralsemueve/?hl=es"><img src="Logos redes/logo insta.png" alt="LogoInsta" width="30pt" height="30pt"></a></td>
+                        <td><a href="https://www.facebook.com/corral.semueve"><img src="Logos redes/face.png" alt="LogoFace" width="30pt" height="30pt"></a></td>
+                        <td><a href="https://www.linkedin.com/in/alberto-c-162930135/"><img src="Logos redes/linke.png" alt="LogoFace" width="30pt" height="30pt"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>

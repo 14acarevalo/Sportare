@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(fondoProyecto/fondo12.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px; /* Nuevo tamaño de fuente base para todos los elementos */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; /* Reducido el padding */
+    margin: 5px; /* Reducido el margin */
+    text-align: center;
+    font-size: 1.5rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgba(3, 3, 94, 0.89);
+}
+
+.boton {
+    border: 1px solid white;
+    background-color: rgb(199, 199, 2);
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    padding: 5px; /* Reducido el padding */
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.5rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); /* Reducido el valor de la sombra */
+    max-width: 37%;
+}
+
+input[type="text"] {
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    margin: 3px; /* Reducido el margen */
+}
+
+input[type="submit"] {
+    font-size: 0.8rem; /* Reducido el tamaño de fuente */
+    background-color: aqua;
+}
+
+a:visited {
+    color: white;
+}
+
+footer {
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+}

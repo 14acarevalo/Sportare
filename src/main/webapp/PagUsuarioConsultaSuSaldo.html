@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PagListarSaldo</title>
+<link rel="stylesheet" href="PagUsuarioConsultaSuSaldo.css">
+<script type="text/javascript">
+        function llamada(url) {
+            fetch(url)
+            .then(res => res.json())
+            .then(res => mostrarResultados(res));
+        }
+
+        function mostrarResultados(datos) {
+            var html = "<table>"; // Inicializamos la variable html con <table>
+            html += "<thead><tr><th>ID</th><th>Cantidad</th><th>Fecha del ingreso</th><th>Identificador del usuario</th><th>Nombre</th><th>Apellidos</th><th>Bonos adquiridos</th><th>Descripcion del servicio</th></tr></thead>";
+            html += "<tbody>";
+            for(var i = 0; i < datos.length; i++) { //Este bucle me permitirá listar todos los usuarios que existen en mi base de datos
+                html += "<tr><td>" + datos[i].idIngreso + "</td><td>" + datos[i].ingresos + "</td><td>" + datos[i].fechaIngreso+ "</td><td>" + datos[i].idUsuario + "</td><td>" + datos[i].nombreUsuario + "</td><td>" + datos[i].apellidosUsuario + "</td><td>" + datos[i].saldo + "</td><td>" + datos[i].descripcion + "</td></tr>";
+            }
+            html += "</tbody>";
+            html += "</table>";
+            document.getElementById("resultados").innerHTML = html;
+        }
+
+        window.onload = function() {
+            llamada("ClaseListarControlEconomico");
+        }
+    </script>
+</head>
+<body>
+<header>
+        <div class="logo"> <img src="PicturesPortada/SPORTARE.png" alt="Logo" width="100px" height="100px"></div>
+        <div class="menu"> 
+            <ul>
+                <li> <a href="PaginaPrincipalUsuario.html">Inicio</a></li>
+                <li> <a href="Pag_contactaConmigo.html">Contacto</a></li>
+                <li><a href="Pag_informacion.html"> Informacion</a></li>
+                <li><a href="PagMenuContabilidad.html"></a>Menú Contabilidad</li>
+            </ul>
+        </div>
+        <div class="presentacion">
+            <p class="Bienvenidos"><h1>Bienvenido a <span class="nombremarca">TUS PAGOS</span></h1>
+            <p>Todos los datos los podrás encontrar en este apartado</p>
+         </div>
+    </header>
+        
+    <main>
+        <div id="resultados" class="tablaDatos"></div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="Pag_contactaConmigo.html">Contacta con nosotros</a>
+            <p>Todos tus datos en esta página</p>
+            <p>Visítanos en:</p>
+            <div>
+                <table>
+                    <tr>
+                        <td><a href="https://www.instagram.com/corralsemueve/?hl=es"><img src="Logos redes/logo insta.png" alt="LogoInsta" width="30pt" height="30pt"></a></td>
+                        <td><a href="https://www.facebook.com/corral.semueve"><img src="Logos redes/face.png" alt="LogoFace" width="30pt" height="30pt"></a></td>
+                        <td><a href="https://www.linkedin.com/in/alberto-c-162930135/"><img src="Logos redes/linke.png" alt="LogoFace" width="30pt" height="30pt"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>   
+    </footer>  
+</body>
+</body>
+</html>

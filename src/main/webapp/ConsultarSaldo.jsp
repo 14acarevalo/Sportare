@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MenuPrincipalConsultaDeSaldo</title>
+<link rel="stylesheet" href="PagConsultarSaldoUsuario.css">
+
+</head>
+<body>
+<header>
+    <div class="logo"> <img src="PicturesPortada/SPORTARE.png" alt="Logo" width="100px" height="100px"></div>
+    <div class="menu"> 
+        <ul>
+             <li> <a href="MenuUsuarios.jsp">Inicio</a></li>
+            <li> <a href="Pag_contactaConmigo.html">Contacto</a></li>
+            <li><a href="Pag_informacion.html"> Informacion</a></li>
+        </ul>
+    </div>
+    <div class="presentacion">
+        <p class="Bienvenidos"><h1><span class="nombremarca">SPORTARE</span></h1>
+        <p>En este página podrás consultar tu saldo o realizar un ingreso</p>
+     </div>
+</div>
+</header>
+
+<main>
+    <a href="SaldoUsuarioIndividual.jsp"><img src="iconosCoordinador/CONSULTAR SALDO.jpg" alt="consultarSaldo" class="consultarSaldo" width="300px" height="300px"></a>
+    <a href="PagIngresarSaldoUsuario.html"><img src="iconosCoordinador/realizar ingreso.jpg" alt="realizarIngreso" class="realizarIngreso" width="300px" height="300px"></a>
+
+
+</main>
+
+<footer>
+    <div>
+        <p>Disfruta del deporte en tu entidad</p>
+              <p>Puedes encontrarnos en: </p>
+              <div>
+                  <table>
+                      <th>
+                          <tr><a href="https://www.instagram.com/corralsemueve/?hl=es"> <img src="Logos redes/logo insta.png" alt="LogoInsta" width="30pt" height="30pt"> </a> </tr>
+                          <tr><a href="https://www.facebook.com/corral.semueve"> <img src="Logos redes/face.png" alt="LogoFace" width="30pt" height="30pt"> </a></tr>
+                          <tr><a href="https://www.linkedin.com/in/alberto-c-162930135/"> </a><img src="Logos redes/linke.png" alt="LogoFace" width="30pt" height="30pt"> </tr>
+                      </th>
+                  </table>
+              </div>
+      </div>   
+
+</footer>
+    
+</body>
+</html>

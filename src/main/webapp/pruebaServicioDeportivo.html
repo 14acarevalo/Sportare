@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+
+    </header>
+
+    <main>
+         <form name="PistaTenis" action="ClaseReservaServicioDeportivo" method="post">
+            <select id="nombreServicio" name="nombreServicio" required>
+                <option value="">Selecciona el nombre del servicio: Tenis</option>
+                <option value="Tenis">Tenis</option>
+            </select><br>
+            <label for="horaInicio">Hora de comienzo</label>
+            <select id="horaInicio" name="horaInicio" required>
+                <option value="">Hora</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+
+            </select> 
+            
+            <select id="minInicio" name="minInicio" required>
+                <option value="">Minuto</option>
+                <option value="00">00</option>
+            </select>
+           
+            
+            <label for="horaFin">Hora de finalizacion</label>
+            <select id="horaFin" name="horaFin" required>
+                <option value="">Hora</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+            </select>
+            
+            <select id="minFinal" name="minFinal" required>
+                <option value="">Minuto</option>
+                <option value="00">00</option>
+            </select>
+       
+                <label for="dia">Dia</label>
+                <select id="dia" name="dia" required>
+                    <option value="">Dia</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+
+                </select>
+
+                <label for="mes">Mes</label>
+                <select id="mes" name="mes" required>
+                    <option value="">mes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+
+                </select>
+
+            <label for="idUsuario">ID Usuario</label>
+            <input type="text" id="idUsuario" name="idUsuario" placeholder="ID Usuario" required><br>
+            <input type="submit" value="Reservar">
+        </form>
+    
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+</body>
+</html>

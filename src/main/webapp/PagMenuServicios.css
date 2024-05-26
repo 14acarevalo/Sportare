@@ -1,0 +1,70 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-image: url(fondoProyecto/fondo12.jpg) ;
+    background-size: cover;
+
+}
+
+header {
+display: flex;
+background-color:rgba(3, 3, 94, 0.89);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.presentacion{
+text-align: center;
+margin: auto;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+}
+
+.perfil {
+    padding: 10px; /* Reducido el padding */
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: wheat;
+    width: 100%;
+    font-size: 45px;
+    color: rgba(3, 3, 94, 0.89);
+}
+
+.panelCoordinador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px
+    
+}
+
+.insertar, .listar {
+    border-radius: 50%; /* Hacer los iconos completamente redondos */
+    margin: auto; /* Para centrar horizontalmente */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Para centrar horizontalmente */
+    align-items: center; /* Para centrar verticalmente */
+}
+
+
+footer{ 
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+   
+}
+
+
+a:visited {
+    color: white;
+}

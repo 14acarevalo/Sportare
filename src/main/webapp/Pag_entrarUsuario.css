@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(PicturesPortada/pexels-edward-jenner-4252660.jpg);
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Nuevo tamaño de fuente base para todos los elementos */
+}
+
+header {
+    padding: 10px; /* Reducido el padding */
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+main {
+    padding: 10px; /* Reducido el padding */
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.5rem; /* Reducido el tamaño de fuente */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); /* Reducido el valor de la sombra */
+    max-width: 50%; /* Aumentado el porcentaje del ancho máximo */
+}
+
+input[type="text"],
+input[type="Observaciones"] {
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    margin: 5px; /* Ajustado el margen */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 0.8rem; /* Reducido el tamaño de fuente */
+    background-color: aqua;
+}
+
+a:visited {
+    color: blue;
+}
+
+footer {
+    margin-top: 5px; /* Reducido el margen superior */
+    background-color: rgba(3, 3, 94, 0.89);
+    color: white;
+    font-size: 1rem; /* Reducido el tamaño de fuente */
+    text-align: center;
+    width: 100%;
+}

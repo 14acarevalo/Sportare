@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+    <link rel="stylesheet" href="PagVisualizarDatosUsuario.css">
+
+<script type="text/javascript">
+        function llamada() {
+            fetch('ClaseUsuario?op=1')
+            .then(res => res.json())
+            .then(res => pintarResultados(res));
+        }
+
+        function pintarResultados(usuarios) {
+            var html = "<table>"; // Inicializamos la variable html con <table>
+            html += "<thead><tr><th>ID</th><th>Nombre</th><th>Apellidos</th><th>Correo Electrónico</th><th>Password</th><th>Fecha de Nacimiento</th><th>DNI</th><th>Nacionalidad</th><th>Ciudad</th><th>Dirección</th><th>Calle</th><th>Teléfono</th><th>Código Postal</th><th>Genero</th><th>saldo</th><th>Editar</th></tr></thead>";
+            html += "<tbody>";
+
+            // Recorremos el array de usuarios
+            usuarios.forEach(function(usuario) {
+                // Agregamos una fila para cada usuario
+                html += "<tr><td>" + usuario.idUsuario + "</td><td>" + usuario.nombre + "</td><td>" + usuario.apellidos + "</td><td>" + usuario.correoElectronico + "</td><td>" + usuario.password + "</td><td>" + usuario.fechaNacimiento + "</td><td>" + usuario.dni + "</td><td>" + usuario.nacionalidad + "</td><td>" + usuario.ciudad + "</td><td>" + usuario.direccion + "</td><td>" + usuario.calle + "</td><td>" + usuario.telefono + "</td><td>" + usuario.codigoPostal + "</td><td>" + usuario.saldo + "</td><td>" + usuario.genero + "</td><td><a href='PagModificarUsuarioDatos.html?idUsuario=" + usuario.idUsuario + "&op=2'>Editar</a></td></tr>";
+            });
+            
+            html += "</tbody>";
+            html += "</table>";
+            document.getElementById("resultados").innerHTML = html;
+        }
+
+        window.onload = function() {
+            llamada("ClaseUsuario");
+        }
+
+    </script>
+</head>
+<body>
+<header>
+        <div class="logo"> <img src="PicturesPortada/SPORTARE.png" alt="Logo" width="100px" height="100px"></div>
+        <div class="menu"> 
+            <ul>
+                <li> <a href="PagCoordMenu.html">Inicio</a></li>
+                <li> <a href="Pag_perfil_usuario.html">Página Usuario</a></li>
+                <li> <a href="Pag_informacion.html"> Informacion</a></li>
+                <li> <a href="PagDatosUsuario.html"> Refrescar pantalla</a></li>
+                
+            </ul>
+        </div>
+        <div class="presentacion">
+            <p class="Bienvenidos"><h1>Bienvenido a <span class="nombremarca">TUS DATOS</span></h1>
+            <p>Todos los datos los podrás encontrar en este apartado</p>
+         </div>
+    </header>
+        
+    <main>
+        <div id="resultados" class="tablaDatos"></div>
+    </main>
+
+    <footer>
+        <div>
+            <a href="Pag_contactaConmigo.html">Contacta con nosotros</a>
+            <p>Todos tus datos en esta página</p>
+            <p>Visítanos en:</p>
+            <div>
+                <table>
+                    <tr>
+                        <td><a href="https://www.instagram.com/corralsemueve/?hl=es"><img src="Logos redes/logo insta.png" alt="LogoInsta" width="30pt" height="30pt"></a></td>
+                        <td><a href="https://www.facebook.com/corral.semueve"><img src="Logos redes/face.png" alt="LogoFace" width="30pt" height="30pt"></a></td>
+                        <td><a href="https://www.linkedin.com/in/alberto-c-162930135/"><img src="Logos redes/linke.png" alt="LogoFace" width="30pt" height="30pt"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>

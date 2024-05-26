@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PagReservaInstalacionesCoordinador</title>
+<link rel="stylesheet" href="ReservaInstalacionesCoordinador.css">
+<script type="text/javascript">
+
+function llamada(idServicio, op){
+    fetch('ClaseModificarServicioDeportivo?idServicio='+idServicio+"&op="+op)
+    .then(response => response.json())
+    .then(data => pintarFormulario(data))
+}
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+
+
+function pintarFormulario(datos) {
+	console.log("NOFUNCIONA")
+	document.getElementById("idServicio").value = datos.idServicio;
+	
+	document.getElementById("nombre").value = datos.nombre;
+	document.getElementById("horaIniciacion").value = datos.horaIniciacion;
+	document.getElementById("minInicio").value = datos.minInicio;
+	document.getElementById("horaFinalizacion").value = datos.horaFinalizacion;
+	document.getElementById("minFinal").value = datos.minFinal;
+	document.getElementById("dia").value = datos.dia;
+	document.getElementById("mes").value = datos.mes;
+	
+}
+
+window.onload = function(){
+    let idServicio = getParameterByName("idServicio");
+    let opcion = getParameterByName("op");
+    llamada(idServicio, opcion);
+}
+</script>
+
+</head>
+<body>
+
+<header>
+<div class="logo"> <img src="PicturesPortada/SPORTARE.png" alt="Logo" width="100px" height="100px"></div>
+    <div class="menu"> 
+        <ul>
+            <li> <a href="PaginaPrincipalUsuario.html">Inicio</a></li>
+            <li> <a href="Pag_contactaConmigo.html">Contacto</a></li>
+            <li><a href="Pag_informacion.html"> Informacion</a></li>
+            <li><a href="PagConsultarSaldoUsuario.html">Menú Contabilidad</a></li>
+        </ul>
+    </div>
+    <div class="presentacion">
+        <p class="Bienvenidos"><h1><span class="nombremarca">SPORTARE</span></h1>
+        <p>¿Quieres realizar tu reserva? Está es tu página</p>
+     </div>
+</div>
+    </header>
+
+    <main>
+        <div class="instalaciones">
+         <form name="CambiarServicio" action="ClaseModificarServicioDeportivo" method="post">
+         
+         <input type="hidden" id="idServicio" name="idServicio" value = "">
+          
+        <label for="nombre"> Nombre </label>
+		<input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+		<label for="horaIniciacion"> Hora comienzo </label>
+		<input type="text" id="horaIniciacion" name="horaIniciacion" placeholder="Hora comienzo"><br>
+		<label for="minInicio"> Minuto de comienzo </label>
+		<input type="text" id="minInicio" name="minInicio" placeholder="Minuto de comienzo"><br>
+		<label for="horaFinalizacion"> Hora finalizacion </label>
+		<input type="text" id="horaFinalizacion" name="horaFinalizacion" placeholder="Hora finalizacion"><br>
+		<label for="minFinal"> Minuto final </label>
+		<input type="text" id="minFinal" name="minFinal" placeholder="Minuto final"><br>
+		<label for="dia"> Dia </label>
+		<input type="text" id="dia" name="dia" placeholder="Dia"><br>
+		<label for="mes"> Mes </label>
+		<input type="text" id="mes" name="mes" placeholder="Mes"><br>
+		
+		<input type="submit" value="Actualizar">
+            
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <div class="fin">
+            <p> Todas nuestras instalaciones se encuentran ubicadas en el polideportivo municipal </p> 
+             <p>Cualquier consulta, puede encontrarnos en <a href="Pag_contactaConmigo.html"></a></p>
+         <p>Más información en: </p>
+         <div>
+             <table>
+                 <th>
+                     <tr><a href="https://www.instagram.com/corralsemueve/?hl=es"> <img src="Logos redes/logo insta.png" alt="LogoInsta" width="30pt" height="30pt"> </a> </tr>
+                     <tr><a href="https://www.facebook.com/corral.semueve"> <img src="Logos redes/face.png" alt="LogoFace" width="30pt" height="30pt"> </a></tr>
+                     <tr><a href="https://www.linkedin.com/in/alberto-c-162930135/"> </a><img src="Logos redes/linke.png" alt="LogoFace" width="30pt" height="30pt"> </tr>
+                 </th>
+             </table>
+         </div>
+         </div>
+
+    </footer>
+
+</body>
+</html>
